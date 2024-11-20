@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "20241120linebot"
+version = "0.1.0"
+description = ""
+authors = ["Jmimiding4104 <Jmimiding4104@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+start = "20241120linebot.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "3.1.0"
+line-bot-sdk = "3.14.2"
+uvicorn = "0.32.0"
+requests = "^2.28"
+python-dotenv = "1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
