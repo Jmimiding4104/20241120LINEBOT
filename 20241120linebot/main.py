@@ -368,4 +368,11 @@ def main():
 if __name__ == "__main__":
     main()  # 呼叫 main() 函式啟動應用
 
+@app.route("/trigger", methods=['GET', 'POST'])
+def trigger_api():
+    try:
+        return "OKOK"
+    except Exception as e:
+        return "QQ"
+
 # ngrok http http://127.0.0.1:5000
